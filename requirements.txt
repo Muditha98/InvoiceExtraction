@@ -1,0 +1,43 @@
+# Core FastAPI and Server
+fastapi
+uvicorn[standard]  # [standard] includes websockets and other useful extras
+python-multipart
+gunicorn  # Required for Azure Web App deployment
+
+# Azure Related
+azure-ai-formrecognizer>=3.2.0
+azure-core>=1.26.0
+
+# PDF Processing
+PyPDF2>=3.0.0
+pdf2image>=1.16.0
+poppler-utils
+Pillow>=9.0.0  # More specific version of pillow
+
+# Data Processing
+pandas>=1.5.0
+python-dotenv>=0.19.0
+pydantic>=2.0.0  # Specify v2 since it has breaking changes from v1
+
+# HTTP and Requests
+requests>=2.28.0
+requests-toolbelt>=0.10.0
+
+# AI/ML Related
+groq
+langchain_groq
+
+# Date Parsing (used in your code)
+python-dateutil>=2.8.2
+
+# Async Support
+aiofiles>=0.8.0  # For async file operations
+asyncio>=3.4.3
+
+# Logging and Monitoring
+opencensus-ext-azure>=1.1.7  # For Azure monitoring
+opencensus-ext-logging>=0.1.0
+azure-monitor-opentelemetry>=1.0.0
+
+# Error Handling and Validation
+typing-extensions>=4.5.0
